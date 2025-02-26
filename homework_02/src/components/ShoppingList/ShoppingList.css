@@ -1,0 +1,17 @@
+.shopping-list{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 40px;
+    
+}
+
+.shopping-list h3{
+    color: blueviolet;
+    font-size: 24px;
+    font-weight: 800;
+    text-align: center;
+    width: 50%;
+    margin: 10px;
+}

@@ -1,0 +1,10 @@
+.order-status{
+    cursor: pointer;
+    list-style: none;
+    font-size: 18px;
+    transition: all 400ms;
+}
+
+.order-status:hover{
+    color: blue;
+}
