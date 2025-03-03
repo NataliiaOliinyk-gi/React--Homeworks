@@ -1,0 +1,38 @@
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+}
+
+.ratingImage {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+}
+
+.ratingButtonContainer {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.ratingButton {
+    background-color: transparent;
+    border: 1px solid #e32359;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #e32359;
+    padding: 10px 15px;
+    cursor: pointer;
+    box-shadow: 4px 0px 4px 0px #00000080;
+    transition: 0.3s
+}
+
+.ratingButton:hover{
+    background-color: #e32359;
+    color: white;
+}
+

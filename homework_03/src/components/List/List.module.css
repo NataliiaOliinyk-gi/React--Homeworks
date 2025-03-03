@@ -1,0 +1,41 @@
+.listsContainer {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-top: 3px solid #224753; 
+    border-bottom: 3px solid #224753;
+}
+
+.listItem {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 300px;
+    border: 1px solid #224753;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 4px 0px 4px 0px #00000080;
+    transition: transform 1s cubic-bezier(0, 1, 0.5, 1);
+}
+.listItem:hover{
+    transform: translateY(-10px);
+}
+
+.buttonDel {
+    background-color: #add8e6;
+    border: 1px solid #00798a;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #00798a;
+    padding: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.buttonDel:hover{
+    background-color: #00798a;
+    color: #add8e6;
+}
