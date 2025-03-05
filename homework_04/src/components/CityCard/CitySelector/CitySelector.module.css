@@ -1,0 +1,19 @@
+.cityForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.cityForm select {
+    width: 60%;
+    padding: 16px;
+    border-radius: 20px;
+    background-color: #58b15f;
+    color: #fff;
+}
+
+.cityForm h2{
+    padding: 5px 20px;
+}
