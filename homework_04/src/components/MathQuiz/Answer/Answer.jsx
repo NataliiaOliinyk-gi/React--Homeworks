@@ -13,8 +13,6 @@ const Answer = ({ updatePoints, a, b }) => {
 
     const checkAnswer = (event) => {
         event.preventDefault();
-        
-        if (value.trim() === '') return;
 
         if (a + b === Number(value)) {
             updatePoints(1)
@@ -25,7 +23,7 @@ const Answer = ({ updatePoints, a, b }) => {
 
     return (
         <form onSubmit={checkAnswer} className={styles.answerForm}>
-            <input value={value} type="text" name='answer' placeholder='Введите ответ' onChange={handleChange} />
+            <input value={value} type="text" name='answer' placeholder='Введите ответ' onChange={handleChange} required />
             <button>Проверить</button>
         </form>
     );
