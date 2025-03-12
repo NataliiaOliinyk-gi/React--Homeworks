@@ -52,3 +52,5 @@ const citiesData = [
 ];
 
 export default citiesData;
+
+export const initialState = citiesData[0];

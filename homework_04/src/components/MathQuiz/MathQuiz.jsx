@@ -3,6 +3,8 @@ import Answer from './Answer/Answer';
 
 import styles from './MathQuiz.module.css';
 
+const getRandomNumber = () => Math.floor(Math.random() * 10);
+
 const MathQuiz = () => {
 
     const [points, setPoints] = useState(0);
@@ -11,12 +13,10 @@ const MathQuiz = () => {
         setPoints(prevPoints => prevPoints + newPoint)
     };
 
-    const getRandomNumber = () => Math.floor(Math.random() * 10) + 1;
-
     const a = getRandomNumber();
     const b = getRandomNumber();
 
-
+    
     return (
         <div className={styles.mathQuizContainer}>
             <p>Ваши очки: {points}</p>

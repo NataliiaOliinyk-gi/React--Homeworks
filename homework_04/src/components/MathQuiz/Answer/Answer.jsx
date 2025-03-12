@@ -13,9 +13,12 @@ const Answer = ({ updatePoints, a, b }) => {
 
     const checkAnswer = (event) => {
         event.preventDefault();
+        
+        if (value.trim() === '') return;
+
         if (a + b === Number(value)) {
             updatePoints(1)
-        } else updatePoints(0)
+        } else updatePoints(-1)
         setValue('');
     };
 
