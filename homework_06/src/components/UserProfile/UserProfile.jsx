@@ -40,10 +40,6 @@ const UserProfile = () => {
         fetchUser()
     }, []);
 
-    const loadNewUser = () => {
-        fetchUser()
-    };
-
     return (
 
         <div className={styles.wrapper}>
@@ -55,7 +51,7 @@ const UserProfile = () => {
                 <h3 className={styles.userName}>{user.name}</h3>
                 {user.email && <p className={styles.userDecrriptions}>Email: {user.email}</p>}
                 {user.phone && <p className={styles.userDecrriptions}>Phone: {user.phone}</p>}
-                <button className={styles.loadButton} onClick={loadNewUser}>Load New User</button>
+                <button className={styles.loadButton} onClick={fetchUser}>Load New User</button>
 
             </div>
 
