@@ -1,5 +1,5 @@
 
-import items from '../LanguageView/textsForLanguages';
+import items from '../../data/textsForLanguages';
 
 import styles from './TextComponent.module.css';
 

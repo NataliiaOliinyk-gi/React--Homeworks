@@ -1,23 +1,23 @@
-import items from '../textsForLanguages';
+import items from '../../../data/textsForLanguages';
 
 import styles from './LanguageSwitch.module.css';
 
 const LanguageSwitch = ({ language, languageSwitch }) => {
 
-    const currentLanguage = language === 'language' ? 'english' : language;
-
-    const element = items.find(item => item.language === currentLanguage);
+    const element = items.find((item) => item.language === language) || items[0];
 
     const handleChange = (event) => {
         languageSwitch(event.target.value);
     }
 
     return (
-        <select className={styles.languageSwitch} defaultValue='language' name="languageSwitch" id="languageSwitch" onChange={handleChange}>
+        <select className={styles.languageSwitch} value='language' name="languageSwitch" id="languageSwitch" onChange={handleChange}>
             <option value='language'>{element.selectLanguage}</option>
-            <option value='english'>{element.selectEnglish}</option>
-            <option value='deutsch'>{element.selectDeutsch}</option>
-            <option value='ukrainian'>{element.selectUkrainian}</option>
+            {items.map(item => (
+                <option key={item.language} value={item.language}>
+                    {element.languages[item.language]}
+                </option>
+            ))}
         </select>
     );
 };
