@@ -1,0 +1,12 @@
+.languageSwitch{
+    background-color: #b172ec;
+    padding: 10px 20px;
+    border-radius: 20px;
+    border: none;
+    box-shadow: 2px 2px 4px 2px #00000039;
+}
+
+.languageSwitch:hover{
+    border: 2px solid #9337e9;
+    box-shadow: 2px 2px 4px 2px #00000069;
+}
