@@ -1,8 +1,13 @@
+import { useContext } from 'react';
+import { languageContext } from '../../../context/LanguageProvider';
+
 import items from '../../../data/textsForLanguages';
 
 import styles from './LanguageSwitch.module.css';
 
-const LanguageSwitch = ({ language, languageSwitch }) => {
+const LanguageSwitch = () => {
+
+    const { language, languageSwitch } = useContext(languageContext);
 
     const element = items.find((item) => item.language === language) || items[0];
 

@@ -1,9 +1,13 @@
+import { useContext } from 'react';
+import { languageContext } from '../../context/LanguageProvider';
 
 import items from '../../data/textsForLanguages';
 
 import styles from './TextComponent.module.css';
 
-const TextComponent = ({ language }) => {
+const TextComponent = () => {
+
+    const { language} = useContext(languageContext);
 
     const currentLanguage = language === 'language' ? 'english' : language;
 
