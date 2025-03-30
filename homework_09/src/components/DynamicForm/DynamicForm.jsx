@@ -25,7 +25,10 @@ const DynamicForm = () => {
                 <form onSubmit={handleSubmit(onSubmit)} className={styles.myForm}>
                     <div className={styles.fields}>
                         <label htmlFor={firstFieldId} className={styles.label}>First Field</label>
-                        <input {...register('firstField', { required: 'This field is required' })}
+                        <input {...register('firstField', {
+                            required: 'This field is required',
+                            minLength: { value: 5, message: 'More Than 5 Symbols'}
+                        })}
                             type="text" id={firstFieldId} className={styles.textField} />
                         {errors.firstField && <p className={styles.error}>{errors.firstField.message}</p>}
                     </div>
