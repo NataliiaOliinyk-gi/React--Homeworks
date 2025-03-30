@@ -9,7 +9,7 @@ const ListItems = () => {
         console.log('компонент обновлен');
     }, []);
 
-    const handleChenge = (event) => {
+    const handleChange = (event) => {
         setInputValue(event.target.value)
     }
     const addItem = () => {
@@ -23,7 +23,7 @@ const ListItems = () => {
     const elements = items.map(item => <li key={item}>{item}</li>)
     return (
         <div>
-            <input onChange={handleChenge} value={inputValue} type="text" name="elementAdd" placeholder="Введите элемент списка" />
+            <input onChange={handleChange} value={inputValue} type="text" name="elementAdd" placeholder="Введите элемент списка" />
             <button onClick={addItem}>Добавить</button>
             <ul>
                 <h3>Список элементов</h3>
