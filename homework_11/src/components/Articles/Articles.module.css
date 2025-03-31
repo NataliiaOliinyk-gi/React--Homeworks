@@ -1,0 +1,19 @@
+.menu{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    gap: 20px;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.link {
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.link:hover{
+    color: #f65679;
+    text-decoration: solid underline #f65679 3px;
+}
+

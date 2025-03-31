@@ -1,0 +1,20 @@
+.nav{
+    margin: 30px;
+}
+
+.link {
+    font-size: 18px;
+    display: inline-block;
+    text-decoration: none;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+.link:hover{
+    color: #f65679;
+}
+
+.link:global(.active) {
+    color: #f65679;
+    font-weight: 500;
+    text-decoration: solid underline #f65679 4px;
+}
