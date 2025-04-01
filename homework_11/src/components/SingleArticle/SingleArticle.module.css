@@ -24,7 +24,7 @@
     color: #f65679;
 }
 
-.textContainer{
+.textContainer {
     cursor: pointer;
     display: flex;
     flex-direction: column;
@@ -50,4 +50,10 @@
 
 .btn:hover {
     background-color: #f65679;
+}
+
+.error {
+    color: red;
+    font-size: 18px;
+    text-align: center;
 }

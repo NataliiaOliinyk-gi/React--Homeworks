@@ -13,6 +13,9 @@ const SingleArticle = () => {
     const [isVisibleContent, setIsVisibleContent] = useState(false);
 
     const element = articles.find(item => item.id === Number(id));
+
+    if (!element) return <div className={styles.error}>Article not found</div>
+
     const elements = element.content.map((el, idx) => (
         <p key={idx}>{el}</p>
     ))
