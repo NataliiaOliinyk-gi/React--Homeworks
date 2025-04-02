@@ -1,13 +1,12 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 import articles from "../../data/articles";
 
 import styles from './SingleArticle.module.css';
 
-const SingleArticle = () => {
+const SingleArticle = ({ id }) => {
 
-    const { id } = useParams();
     const navigate = useNavigate();
     const [isVisible, setIsVisible] = useState(true);
     const [isVisibleContent, setIsVisibleContent] = useState(false);
