@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import { useState } from "react";
 
 import articles from "../../data/articles";
@@ -8,6 +8,8 @@ import styles from './SingleArticle.module.css';
 const SingleArticle = ({ id }) => {
 
     const navigate = useNavigate();
+    const location = useLocation();
+
     const [isVisible, setIsVisible] = useState(true);
     const [isVisibleContent, setIsVisibleContent] = useState(false);
 
@@ -34,7 +36,7 @@ const SingleArticle = ({ id }) => {
                 <h2 className={styles.title}>Статья {id}</h2>
                 {isVisible && <p onClick={onView} className={styles.content}>Содержание статьи {id} ...</p>}
                 {isVisibleContent && <div onClick={onView} className={styles.textContainer}>{elements}</div>}
-                <p className={styles.description}>Текущий путь: /articles/{id} </p>
+                <p className={styles.description}>Текущий путь: {location.pathname} </p>
                 <div>
                     <button onClick={goBack} className={styles.btn}>Назад</button>
                 </div>
