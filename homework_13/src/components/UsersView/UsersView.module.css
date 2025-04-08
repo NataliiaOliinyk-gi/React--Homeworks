@@ -16,3 +16,13 @@
     text-align: center;
     margin-bottom: 20px;
 }
+
+.load {
+    font-size: 14px;
+    color: blue;
+}
+
+.error {
+    font-size: 14px;
+    color: red;
+}

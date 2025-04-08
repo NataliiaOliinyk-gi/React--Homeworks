@@ -40,8 +40,8 @@ const UsersView = () => {
                 <h2 className={styles.title}>User List</h2>
                 <Filter />
                 <UserList />
-                {loading && <p>Loading Users...</p>}
-                {error && <p>{error}</p>}
+                {loading && <p className={styles.load}>Loading Users...</p>}
+                {error && <p className={styles.error}>{error}</p>}
             </div>
 
         </div>
