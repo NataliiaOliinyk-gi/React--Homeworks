@@ -1,0 +1,40 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.box {
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: end;
+}
+
+.input {
+    width: 80%;
+    padding: 6px 10px;
+    outline: none;
+}
+
+.input:focus {
+    border: 3px solid blue;
+}
+
+.btn {
+    padding: 6px 30px;
+    border: 1px solid gray;
+}
+
+.btn:hover {
+    background-color: blue;
+    border: 1px solid blue;
+    color: white;
+}
+
+.error {
+    font-size: 14px;
+    color: red;
+    margin: 6px;
+}
